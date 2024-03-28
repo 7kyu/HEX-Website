@@ -1,14 +1,695 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="HEX" />
+    <meta
+      property="og:description"
+      content="Prostor za sve nas koji delimo ljubav prema intuiciji i njenim moćima!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="https://i.imgur.com/rqzmVnI.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
     <title>HEX</title>
-</head>
-<body>
-    <h1>HEX</h1>
+    <link rel="icon" type="image/png" href="dodaci/logo-transparent.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="scroll-arrow" class="arrow-down">
+      <i class="bi bi-arrow-down"></i>
+    </div>
+    <div class="spinner">
+      <img src="dodaci/logo-transparent.png" alt="Logo" />
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <!-- Navbar and Intro Image -->
+    <div id="start">
+      <img class="bg-img" src="dodaci/pozadina.jpg" alt="background image" />
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container fade-in-navbar">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <ul
+              class="navbar-nav ms-auto float-end"
+              style="text-transform: uppercase"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >O meni</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="divinacija.html">Divinacija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="usluge.html">Čitanja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Logo -->
+    <div class="text-center mt-5 pt-3 logo-div">
+      <img
+        class="logo"
+        src="dodaci/logo-transparent.png"
+        alt="Logo"
+        data-aos="zoom-in"
+        data-aos-duration="2500"
+      />
+    </div>
+
+    <!-- Intro -->
+    <section id="intro">
+      <div class="container-fluid pt-2">
+        <div class="row justify-content-center align-items-start">
+          <div class="col-md-5 text-center">
+            <img
+              class="img-fluid mt-4 rounded-circle border border-2 hex-border shadow"
+              src="dodaci/HEX.jpg"
+              alt="HEX image"
+              style="height: 370px"
+            />
+          </div>
+          <div class="col-md-5 text-center text-md-end pb-5">
+            <h2>
+              <div
+                class="display-3 mt-5 mb-3 wrapping"
+                style="font-family: &quot;Cinzel Decorative&quot;, serif"
+              >
+                Zdravo mili moji!
+              </div>
+            </h2>
+            <p class="lead my-4 wrapping">
+              Dobrodošli na HEX zvanični sajt, koji jeste i biće prostor za sve
+              nas koji delimo ljubav prema intuiciji i njenim moćima!<br />
+              Hvala što ste me manifestovali u svoj život!
+            </p>
+            <a
+              href="about.html"
+              class="btn btn-sm dugme text-white rounded-pill shadow-sm"
+              >VIŠE O MENI</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ponuda -->
+    <section style="border-bottom: 1px solid whitesmoke; margin-bottom: -2px">
+      <h1
+        class="text-center"
+        data-bg-color="whitesmoke"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Ovde sam da ti ponudim čitanja na temu
+      </h1>
+    </section>
+
+    <section style="border-bottom: 1px solid whitesmoke; margin-bottom: -2px">
+      <div class="reveal">
+        <img
+          src="dodaci/crownheart.png"
+          alt="crowned hear"
+          class="img-fluid"
+          style="height: 20vh; margin: 5svh"
+        />
+      </div>
+      <p
+        class="sec-p text-center text-break text-dark"
+        data-bg-color="whitesmoke"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Ljubav / Veze i odnosi <br />
+        Porodica / Prijatelji
+      </p>
+    </section>
+
+    <section style="border-bottom: 1px solid whitesmoke; margin-bottom: -2px">
+      <div class="reveal">
+        <img
+          src="dodaci/parchment.png"
+          alt="parchment"
+          class="img-fluid"
+          style="height: 20vh; margin: 5svh"
+        />
+      </div>
+      <p
+        class="sec-p text-center text-break text-dark"
+        data-bg-color="whitesmoke"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Karijera / Posao - Nove mogućnosti<br />Tvoja misija u životu
+      </p>
+    </section>
+
+    <section style="border-bottom: 1px solid whitesmoke; margin-bottom: -2px">
+      <div class="reveal">
+        <img
+          src="dodaci/target.png"
+          alt="target"
+          class="img-fluid"
+          style="height: 20vh; margin: 5svh"
+        />
+      </div>
+      <p
+        class="sec-p text-center text-break text-dark"
+        data-bg-color="whitesmoke"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Vodjstvo za tvoje ciljeve i želje
+      </p>
+    </section>
+
+    <section style="border-bottom: 1px solid whitesmoke; margin-bottom: -2px">
+      <div class="reveal">
+        <img
+          src="dodaci/chari.png"
+          alt="chari"
+          class="img-fluid"
+          style="height: 20vh; margin: 5svh"
+        />
+      </div>
+      <p
+        class="sec-p text-center text-break text-dark"
+        data-bg-color="whitesmoke"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Unutrašnji rast i spiritualni razvoj
+      </p>
+    </section>
+    <section style="border-bottom: 1px solid whitesmoke; margin-bottom: -2px">
+      <h1
+        class="text-center text-dark"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Kako?
+      </h1>
+    </section>
+
+    <!-- Usluge -->
+    <section style="background-color: whitesmoke">
+      <div class="container-fluid ponuda py-5 my-5">
+        <div
+          class="mx-auto text-center mb-5 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 class="mb-3 ponuda-h1">Intuitivna Čitanja</h1>
+        </div>
+        <div class="tab-class text-center">
+          <div class="tab-content">
+            <div class="tab-pane fade show p-0 active" id="PonudaTab">
+              <div class="row g-5">
+                <div
+                  class="col-sm-6 col-md-5 col-lg-4 col-xl-4 aos-init aos-animate"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
+                >
+                  <div class="ponuda-item">
+                    <img
+                      src="dodaci/danepitanje.jpg"
+                      alt="DA/NE pitanje"
+                      class="img-fluid rounded"
+                      style="height: 370px"
+                    />
+                    <div class="ponuda-content">
+                      <div class="ponuda-info">
+                        <h5
+                          class="text-dark mb-2"
+                          style="padding-bottom: 20svh"
+                        >
+                          Odgovor na pitanje sa da ili ne
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-6 col-md-5 col-lg-4 col-xl-4 aos-init aos-animate"
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
+                >
+                  <div class="ponuda-item">
+                    <img
+                      src="dodaci/kracaanaliza.jpg"
+                      alt="Kraća analiza"
+                      class="img-fluid rounded"
+                      style="height: 370px"
+                    />
+                    <div class="ponuda-content">
+                      <div class="ponuda-info">
+                        <h5
+                          class="text-dark mb-2"
+                          style="padding-bottom: 20svh"
+                        >
+                          Korišćenje tarot karata za kanalisanje
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-6 col-md-5 col-lg-4 col-xl-4 aos-init aos-animate"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                >
+                  <div class="ponuda-item">
+                    <img
+                      src="dodaci/detaljnaanaliza.jpg"
+                      alt="Detaljna analiza"
+                      class="img-fluid rounded"
+                      style="height: 370px"
+                    />
+                    <div class="ponuda-content">
+                      <div class="ponuda-info">
+                        <h5
+                          class="text-dark mb-2"
+                          style="padding-bottom: 20svh"
+                        >
+                          Korišćenje različitih orakl špilova uz tarot karte za
+                          kanalisanje
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-6 col-md-5 col-lg-4 col-xl-4 aos-init aos-animate"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
+                >
+                  <div class="ponuda-item">
+                    <img
+                      src="dodaci/kanalisaneporuke.jpg"
+                      alt="Kanalisane poruke tvoje osobe"
+                      class="img-fluid rounded"
+                      style="height: 370px"
+                    />
+                    <div class="ponuda-content">
+                      <div class="ponuda-info">
+                        <h5
+                          class="text-dark mb-2"
+                          style="padding-bottom: 20svh"
+                        >
+                          Kanalisanje direktnih reči tvoje osobe prema tebi!
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-6 col-md-5 col-lg-4 col-xl-4 aos-init aos-animate"
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
+                >
+                  <div class="ponuda-item">
+                    <img
+                      src="dodaci/velikootvaranje.jpg"
+                      alt="Veliko otvaranje"
+                      class="img-fluid rounded"
+                      style="height: 370px"
+                    />
+                    <div class="ponuda-content">
+                      <div class="ponuda-info">
+                        <h5
+                          class="text-dark mb-2"
+                          style="padding-bottom: 20svh"
+                        >
+                          Analiza tvoje situacije kroz 3 razdoblja
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-6 col-md-5 col-lg-4 col-xl-4 aos-init aos-animate"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                >
+                  <div class="ponuda-item">
+                    <img
+                      src="dodaci/danepitanje.jpg"
+                      alt="DA/NE pitanje"
+                      class="img-fluid rounded"
+                      style="height: 370px"
+                    />
+                    <div class="ponuda-content">
+                      <div class="ponuda-info">
+                        <h5
+                          class="text-dark mb-2"
+                          style="padding-bottom: 20svh"
+                        >
+                          Program isceljenja - VRATI SE SEBI
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-lg-10 pt-2">
+      <div class="container-fluid pb-3">
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1 col-md-12 col-12">
+            <div
+              class="py-6 px-6 px-xl-0 rounded-4"
+              style="background-color: #9899db; padding: 10px"
+            >
+              <div class="row align-items-center">
+                <div class="offset-xl-1 col-xl-5 col-md-6 col-12">
+                  <div>
+                    <h2 class="text-white mb-3 pt-3 text-break">
+                      Da li ti je potreban uvid u tvoju situaciju u ljubavi,
+                      karijeri ili životu?
+                    </h2>
+                    <p class="text-white fs-5 text-break" style="opacity: 0.8">
+                      Rezerviši intuitivno čitanje sa mnom!
+                    </p>
+                    <a href="usluge.html"
+                      ><button
+                        class="btn btn-sm btn-light rounded-pill mt-3 shadow-sm"
+                        style="color: #9899db; font-weight: 600"
+                      >
+                        Saznaj više
+                      </button></a
+                    >
+                  </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-12 pb-4">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid rounded-circle shadow mt-4"
+                      src="dodaci/HEX.jpg"
+                      alt="HEX image"
+                      style="height: 300px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="text-light pt-1 border-top border-light-subtle">
+        <div class="container overflow-hidden">
+          <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
+            <div class="col-xs-12 col-sm-6 col-xl-3 order-0 order-xl-0">
+              <div class="footer-logo-wrapper text-center text-sm-start">
+                <img
+                  src="dodaci/logo-transparent.png"
+                  alt="Logo"
+                  width="110"
+                  height="78"
+                />
+                <p class="pt-3 lead" style="font-size: small; font-weight: 500">
+                  Podaci Agencije<br />
+                  Helena Jakovljević PR HEX <br />
+                  PIB 114055431
+                </p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-xl-6 order-2 order-xl-1 py-2">
+              <ul class="nav justify-content-center navbar-dark">
+                <li class="nav-item">
+                  <a class="nav-link px-2 px-md-3 footer-a" href="about.html"
+                    >O Meni</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-2 px-md-3 footer-a"
+                    href="divinacija.html"
+                    >Divinacija</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-2 px-md-3 footer-a" href="usluge.html"
+                    >Čitanja</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-2 px-md-3 footer-a" href="contact.html"
+                    >Kontakt</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-xl-3 order-1 order-xl-2">
+              <ul class="nav justify-content-center justify-content-sm-end">
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-dark px-3"
+                    href="https://www.instagram.com/hex_officiall?igsh=MWM0aTJlcjhmZDJqNw%3D%3D&utm_source=qr"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-dark px-3"
+                    href="https://www.youtube.com/@hex_official"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        d="M29.353,7.264c-0.339-0.891-1.094-1.568-2.02-1.814c-7.396-1.965-15.229-1.965-22.651,0 C3.746,5.696,2.987,6.384,2.65,7.288c-2.253,6.049-2.255,11.596-0.005,17.458c0.341,0.89,1.099,1.566,2.025,1.811 c3.695,0.973,7.497,1.459,11.301,1.459c3.82,0,7.642-0.49,11.358-1.472c0.929-0.246,1.686-0.925,2.025-1.815 C31.596,18.854,31.595,13.141,29.353,7.264z M20.62,16.89c-1.61,1.59-4.27,3.22-6.32,4.01c-0.79,0.31-1.68-0.12-1.87-0.9 c-0.57-2.29-0.57-5.71,0-8c0.19-0.78,1.08-1.21,1.87-0.9c2.05,0.79,4.71,2.42,6.32,4.01C21.13,15.61,21.13,16.39,20.62,16.89z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-dark px-3"
+                    href="https://www.tiktok.com/@hex_1111?_t=8jByGt1GVio&_r=1"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-light pt-2 border-top border-light-subtle">
+        <div class="container overflow-hidden">
+          <div class="row">
+            <div class="col footer-copyright">
+              <div
+                class="footer-copyright-wrapper text-center mt-1"
+                style="font-size: 2vh; margin-right: auto"
+              >
+                &copy; 2024. HEX
+              </div>
+              <div class="credits text-center mt-1" style="font-size: 2vh">
+                <p>
+                  Built by
+                  <a
+                    href="https://www.instagram.com/d.dimika/"
+                    target="_blank"
+                    class="link-light text-decoration-none"
+                    >d.dimika</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Skripte za JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+    <script>
+      const lenis = new Lenis();
+
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      let revealContainers = document.querySelectorAll(".reveal");
+
+      revealContainers.forEach((container) => {
+        let image = container.querySelector("img");
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: container,
+            toggleActions: "restart none none reset",
+          },
+        });
+
+        tl.set(container, { autoAlpha: 1 });
+        tl.from(container, 1.5, {
+          yPercent: 100,
+          ease: Power2.out,
+        });
+        tl.from(image, 1.5, {
+          yPercent: -100,
+          scale: 1.3,
+          delay: -1.5,
+          ease: Power2.out,
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var scrollArrow = document.getElementById("scroll-arrow");
+        var arrowShown = false;
+
+        // Initially hide the arrow
+        scrollArrow.style.opacity = "0";
+
+        // Show the arrow after a certain amount of time (e.g., 3 seconds)
+        setTimeout(function () {
+          scrollArrow.style.opacity = "1";
+          arrowShown = true;
+        }, 3000);
+
+        window.addEventListener("scroll", function () {
+          if (arrowShown && window.scrollY > 1) {
+            scrollArrow.style.opacity = "0";
+          } else {
+            scrollArrow.style.opacity = "1";
+          }
+        });
+      });
+    </script>
+
+    <script>
+      window.addEventListener("load", () => {
+        const spinner = document.querySelector(".spinner");
+
+        spinner.classList.add("spinner-hidden");
+
+        spinner.addEventListener("transitionend", () => {
+          document.body.removeChild("spinner");
+        });
+      });
+    </script>
+  </body>
 </html>
