@@ -85,6 +85,9 @@
                 <a class="nav-link" href="usluge.html">Čitanja</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="program_isceljenja.html">Program Isceljenja</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">Kontakt</a>
               </li>
             </ul>
@@ -93,6 +96,7 @@
       </nav>
     </div>
     <!--Divinacija hero section-->
+    <div class="hero-div">
     <div class="text-center mt-5 pt-5 logo-div" style="height: 50svh">
       <div>
         <p data-aos="zoom-in" data-aos-duration="2500" class="text-light pt-5">
@@ -112,13 +116,13 @@
         </div>
       </h2>
     </div>
-
+  </div>
     <div
       class="container-fluid p-5"
       style="background-color: white; min-height: 85vh"
     >
-      <div class="row justify-content-center align-items-start text-center">
-        <div class="col-lg-6 col-sm-7 col-md-6">
+      <div class="row justify-content-center align-items-start text-center opis">
+        <div class="col-xl-6 col-lg-7 col-sm-7 col-md-6">
           <p class="text-break wrapping lead mb-2">
             Jedna od glavnih metoda koje koristim za kanalisanje i ponovno
             povezivanje sa duhovnim svetom su definitivno KARTE! Postoje
@@ -126,13 +130,13 @@
             karte.
           </p>
           <img
-            class="img-fluid mt-2 mb-2"
+            class="img-fluid mt-2 mb-2 opis-img"
             src="dodaci/tarot.png"
             alt="tarot cards"
             style="height: 230px"
           />
         </div>
-        <div class="col-lg-6 col-sm-7 col-md-7">
+        <div class="col-xl-6 col-lg-7 col-sm-7 col-md-7">
           <p class="lead wrapping">
             Poreklo kartomantije, ili proricanja na kartama, nije poznato, ali
             je praksa uspostavljena u Italiji, Francuskoj i Nemačkoj krajem 14
@@ -161,8 +165,8 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-white p-5 text-md-start">
-      <div class="container-fluid pt-2 mt">
+    <div class="container-fluid bg-white p-5 text-md-start opis">
+      <div class="container-fluid pt-2">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-3 text-center">
             <img
@@ -233,40 +237,45 @@
                 </p>
               </div>
             </div>
-
+  
             <div class="col-xs-12 col-xl-6 order-2 order-xl-1 py-2">
               <ul class="nav justify-content-center navbar-dark">
                 <li class="nav-item">
                   <a
-                    class="nav-link px-2 px-md-3 footer-a"
+                    class="nav-link footer-a"
                     aria-current="page"
                     href="index.html"
                     >Početna</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-2 px-md-3 footer-a" href="about.html"
+                  <a class="nav-link footer-a" href="about.html"
                     >O meni</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-2 px-md-3 footer-a" href="usluge.html"
+                  <a class="nav-link footer-a" href="usluge.html"
                     >Čitanja</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-2 px-md-3 footer-a" href="contact.html"
+                  <a class="nav-link footer-a" href="program_isceljenja.html"
+                    >Program Isceljenja</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link footer-a" href="contact.html"
                     >Kontakt</a
                   >
                 </li>
               </ul>
             </div>
-
+  
             <div class="col-xs-12 col-sm-6 col-xl-3 order-1 order-xl-2">
               <ul class="nav justify-content-center justify-content-sm-end">
                 <li class="nav-item">
                   <a
-                    class="nav-link link-dark px-3"
+                    class="nav-link link-dark"
                     href="https://www.instagram.com/hex_officiall?igsh=MWM0aTJlcjhmZDJqNw%3D%3D&utm_source=qr"
                     target="_blank"
                   >
@@ -286,7 +295,7 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link link-dark px-3"
+                    class="nav-link link-dark"
                     href="https://www.youtube.com/@hex_official"
                     target="_blank"
                   >
@@ -306,7 +315,7 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link link-dark px-3"
+                    class="nav-link link-dark"
                     href="https://www.tiktok.com/@hex_1111?_t=8jByGt1GVio&_r=1"
                     target="_blank"
                   >
@@ -329,7 +338,7 @@
           </div>
         </div>
       </div>
-
+  
       <div class="text-light pt-2 border-top border-light-subtle">
         <div class="container overflow-hidden">
           <div class="row">
@@ -338,8 +347,15 @@
                 class="footer-copyright-wrapper text-center mt-1"
                 style="font-size: 2vh; margin-right: auto"
               >
+                all rights reserved.
+              </div>
+              <div
+                class="footer-copyright-wrapper text-center mt-1"
+                style="font-size: 2vh; margin-right: auto"
+              >
                 &copy; 2024. HEX
               </div>
+              
               <div class="credits text-center mt-1" style="font-size: 2vh">
                 <p>
                   Built by
@@ -356,6 +372,7 @@
         </div>
       </div>
     </footer>
+  
 
     <!-- Skripte za JS-->
     <script
@@ -387,26 +404,32 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        var scrollArrow = document.getElementById("scroll-arrow");
-        var arrowShown = false;
+  var scrollArrow = document.getElementById("scroll-arrow");
 
-        // Initially hide the arrow
-        scrollArrow.style.opacity = "0";
+  // Check if arrow is already hidden in localStorage
+  if (localStorage.getItem("scrollArrowHidden") === "true") {
+    scrollArrow.style.opacity = "0";
+  } else {
+    // Initially hide the arrow
+    scrollArrow.style.opacity = "0";
 
-        // Show the arrow after a certain amount of time (e.g., 3 seconds)
-        setTimeout(function () {
-          scrollArrow.style.opacity = "1";
-          arrowShown = true;
-        }, 3000);
+    // Show the arrow after a certain amount of time (e.g., 3 seconds)
+    setTimeout(function () {
+      scrollArrow.style.opacity = "1";
+    }, 1000);
+  }
 
-        window.addEventListener("scroll", function () {
-          if (arrowShown && window.scrollY > 1) {
-            scrollArrow.style.opacity = "0";
-          } else {
-            scrollArrow.style.opacity = "1";
-          }
-        });
-      });
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 1) {
+      scrollArrow.style.opacity = "0";
+      localStorage.setItem("scrollArrowHidden", "true");
+    } else {
+      scrollArrow.style.opacity = "1";
+      localStorage.removeItem("scrollArrowHidden");
+    }
+  });
+});
+
     </script>
     <script>
       window.addEventListener("load", () => {
