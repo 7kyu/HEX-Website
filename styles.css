@@ -236,7 +236,7 @@ footer {
 }
 
 .ponuda .ponuda-item:hover .ponuda-content {
-    background: rgba(173, 234, 255, 0.96);
+    background: rgba(222, 143, 229, 0.96);
     transition: 0.5s;
 }
 
@@ -413,5 +413,3 @@ h5 {
         justify-content: center;
     }
   }
-    
-  
